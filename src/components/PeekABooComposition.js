@@ -24,13 +24,13 @@ export default function PeekABooComposition () {
       {({ Small, Medium, Large }) => (
         <>
           <Small>
-            <p>This paragraph is visible always</p>
+            <p>Peek</p>
           </Small>
           <Medium>
-            <span>This is visible in medium and up</span>
+            <span>A</span>
           </Medium>
           <Large>
-            <span>This is visible in the large screen and up</span>
+            <span>Boo</span>
           </Large>
         </>
       )}
