@@ -1,23 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
-import { query } from 'atomic-layout'
+// import { query } from 'atomic-layout'
 
-const Div = styled.div`
-  @media ${query({ for: 'small' })} {
-    background-color: pink;
-  }
-  @media ${query({ for: 'medium' })} {
-    background-color: gold;
-  }
-  @media ${query({ for: 'large' })} {
-    background-color: skyblue;
-  }
+/* @media ${query({ for: 'small' })} {
+  background-color: pink;
+}
+@media ${query({ for: 'medium' })} {
+  background-color: gold;
+}
+@media ${query({ for: 'large' })} {
+  background-color: skyblue;
+} */
+const BrokenDiv = styled.div`
 `
 
-export default function StyledQuery ({ children }) {
+export default function StyledQuery (props) {
   return (
-    <Div>
-      {children}
-    </Div>
+    <BrokenDiv>
+      {props.children}
+    </BrokenDiv>
   )
 }
