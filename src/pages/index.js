@@ -1,7 +1,9 @@
 import React from 'react'
-
+import CurrentBreakpointHeading from '../components/CurrentBreakpointHeading'
+import ScreenSizeHeading from '../components/ScreenSizeHeading'
 export default () => (
-  <div style={{ textAlign: 'center' }}>
-    <h1>Welcome to React-Static</h1>
+  <div>
+    <CurrentBreakpointHeading />
+    <ScreenSizeHeading />
   </div>
 )

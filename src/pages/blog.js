@@ -3,13 +3,13 @@ import { useRouteData } from 'react-static'
 //
 import { Link } from 'components/Router'
 
-export default function Blog() {
+export default function Blog () {
   const { posts } = useRouteData()
   return (
     <div>
       <h1>It's blog time.</h1>
       <div>
-        <a href="#bottom" id="top">
+        <a href='#bottom' id='top'>
           Scroll to bottom!
         </a>
       </div>
@@ -22,7 +22,7 @@ export default function Blog() {
           </li>
         ))}
       </ul>
-      <a href="#top" id="bottom">
+      <a href='#top' id='bottom'>
         Scroll to top!
       </a>
     </div>
