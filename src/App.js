@@ -30,6 +30,7 @@ function App () {
       breakpoints,
       defaultBreakpointName: 'small'
     })
+    console.log(Layout);
   })
   return (
     <Root>

@@ -1,7 +1,8 @@
+import React from 'react'
 import styled from 'styled-components'
 import { query } from 'atomic-layout'
 
-const StyledQuery = styled.div`
+const Div = styled.div`
   @media ${query({ for: 'small' })} {
     background-color: pink;
   }
@@ -13,4 +14,10 @@ const StyledQuery = styled.div`
   }
 `
 
-export default StyledQuery
+export default function StyledQuery ({ children }) {
+  return (
+    <Div>
+      {children}
+    </Div>
+  )
+}
