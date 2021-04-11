@@ -34,5 +34,9 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "serve": "^11.3.2",
     "standard": "^16.0.3"
+  },
+  "standard": {
+    "env": ["mocha"],
+    "globals": [ "cy", "describe" ]
   }
 }
