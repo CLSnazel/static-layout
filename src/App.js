@@ -35,9 +35,9 @@ function App () {
     <Root>
       <nav>
         <Link to='/'>Home</Link>
+        <Link to='/components'>Components</Link>
         <Link to='/hooks'>Hooks</Link>
         <Link to='/utils'>Utils</Link>
-        <Link to='/components'>Components</Link>
       </nav>
       <div className='content'>
         <React.Suspense fallback={<em>Loading...</em>}>
