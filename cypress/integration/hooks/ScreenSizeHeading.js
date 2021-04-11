@@ -1,15 +1,15 @@
-import { screenSize } from '../../partials/screenSizes'
+import { screens, screenSize } from '../../partials/screenSizes'
 
 const smallTest = () => {
-  cy.get('h1').contains('small')
+  cy.get('h2').contains(screens.small[0])
 }
 
 const mediumTest = () => {
-  cy.get('h1').contains('medium')
+  cy.get('h2').contains(screens.medium[0])
 }
 
 const largeTest = () => {
-  cy.get('h1').contains('large')
+  cy.get('h2').contains(screens.large[0])
 }
 
 export default () => screenSize('ScreenSizeHeading', '/hooks', smallTest, mediumTest, largeTest)

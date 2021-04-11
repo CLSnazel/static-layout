@@ -1,4 +1,4 @@
-const screens = {
+export const screens = {
   small: [
     375,
     667
@@ -13,7 +13,7 @@ const screens = {
   ]
 }
 
-export function screenSize (name, endpoint, smallTest, mediumTest) {
+export function screenSize (name, endpoint, smallTest, mediumTest, largeTest) {
   return describe(name, () => {
     before(() => {
       cy.visit(endpoint)
@@ -28,6 +28,7 @@ export function screenSize (name, endpoint, smallTest, mediumTest) {
     })
     it('should correctly display when large', () => {
       cy.viewport(...screens.large)
+      largeTest()
     })
   })
 }
