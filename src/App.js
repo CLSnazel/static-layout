@@ -31,7 +31,7 @@ function App () {
       defaultBreakpointName: 'small'
     })
     console.log(Layout);
-  })
+  }, [])
   return (
     <Root>
       <nav>
