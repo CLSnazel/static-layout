@@ -1,12 +1,12 @@
 import React from 'react'
-import VisibleLayout from '../components/VisibleLayout'
+import MadeResponsive from '../components/util-components/MadeResponsive'
 export default {
-  title: 'components/VisibleLayout',
-  component: VisibleLayout,
+  title: 'components/MadeResponsive',
+  component: MadeResponsive,
   decorators: []
 }
 
-const Template = (args) => <VisibleLayout {...args} />
+const Template = (args) => <MadeResponsive {...args} color='black' colorMedium='brown' colorLarge='blue' />
 
 export const Desktop = Template.bind({})
 Desktop.parameters = {

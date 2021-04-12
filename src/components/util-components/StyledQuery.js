@@ -1,3 +1,5 @@
+/// the usage of the query is commented out as it is breaking the whole website
+
 import React from 'react'
 import styled from 'styled-components'
 // import { query } from 'atomic-layout'
@@ -12,6 +14,9 @@ import styled from 'styled-components'
   background-color: skyblue;
 } */
 const BrokenDiv = styled.div`
+
+  width: 100%;
+  height: 100vh;
 `
 
 export default function StyledQuery (props) {

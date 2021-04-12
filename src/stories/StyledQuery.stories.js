@@ -1,12 +1,15 @@
+// this story is written, but the atomic-layout utility featured in this component
+// is currently commented out as it breaks react-static
+
 import React from 'react'
-import VisibleLayout from '../components/VisibleLayout'
+import StyledQuery from '../components/util-components/StyledQuery'
 export default {
-  title: 'components/VisibleLayout',
-  component: VisibleLayout,
+  title: 'components/StyledQuery',
+  component: StyledQuery,
   decorators: []
 }
 
-const Template = (args) => <VisibleLayout {...args} />
+const Template = (args) => <StyledQuery {...args} style={{ width: '100%', height: '100vh' }} />
 
 export const Desktop = Template.bind({})
 Desktop.parameters = {
