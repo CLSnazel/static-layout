@@ -3,24 +3,24 @@ import { Only } from 'atomic-layout'
 
 export function OnlySmall () {
   return (
-    <Only to='medium'>
-      <p>Only seen on small screens</p>
+    <Only for='small'>
+      <p id='only'>Only seen on small screens</p>
     </Only>
   )
 }
 
 export function OnlyMedium () {
   return (
-    <Only from='medium' to='large'>
-      <p>Only seen on medium screens</p>
+    <Only for='medium'>
+      <p id='only'>Only seen on medium screens</p>
     </Only>
   )
 }
 
 export function OnlyLarge () {
   return (
-    <Only from='large'>
-      <p>Only seen on large screens</p>
+    <Only for='large'>
+      <p id='only'>Only seen on large screens</p>
     </Only>
   )
 }
