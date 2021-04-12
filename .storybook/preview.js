@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Layout from 'atomic-layout'
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 import '../src/app.css'
 
 export const parameters = {
@@ -10,6 +11,20 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  viewport: {
+    viewports: {
+      mobile: INITIAL_VIEWPORTS.iphone6,
+      tablet: INITIAL_VIEWPORTS.ipad12p,
+      desktop: {
+        name: 'desktop',
+        styles: {
+          height: '900px',
+          width: '1440px'
+        },
+        type: 'desktop'
+      }
+    }
+  }
 }
 
 const breakpoints = {
