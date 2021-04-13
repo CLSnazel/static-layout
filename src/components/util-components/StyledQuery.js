@@ -1,10 +1,11 @@
 /// the usage of the query is commented out as it is breaking the whole website
+import { query } from 'atomic-layout'
+
 
 import React from 'react'
 import styled from 'styled-components'
-// import { query } from 'atomic-layout'
-
-/* @media ${query({ for: 'small' })} {
+const BrokenDiv = styled.div`
+@media ${query({ for: 'small' })} {
   background-color: pink;
 }
 @media ${query({ for: 'medium' })} {
@@ -12,8 +13,7 @@ import styled from 'styled-components'
 }
 @media ${query({ for: 'large' })} {
   background-color: skyblue;
-} */
-const BrokenDiv = styled.div`
+}
 
   width: 100%;
   height: 100vh;
